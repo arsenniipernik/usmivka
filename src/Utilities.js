@@ -32,35 +32,6 @@ export { GetAPIUrl }
 
 export const themeContext = createContext(null);
 
-export function ThemeProvider(props) {
-    let [theme, SetTheme] = useState("light");
-
-    function ToggleTheme() {
-        let new_theme = (theme === "light" ? "dark" : "light");
-        SetTheme(new_theme);
-        SetCookie("theme", new_theme, 24 * 30);
-    }
-
-    useEffect(() => {
-        let cookie = GetCookie("theme");
-        cookie && SetTheme(cookie);
-    }, [])
-
-
-    if (theme === "light") {
-        document.body.classList.remove("dark");
-    }
-    else if (theme === "dark") {
-        document.body.classList.add("dark");
-    }
-
-    return (
-        <themeContext.Provider value={{ theme, ToggleTheme }}>
-            {props.children}
-        </themeContext.Provider>
-    )
-}
-
 export const cookiesContext = createContext(false);
 
 export function CookiesAcceptedProvider(props) {

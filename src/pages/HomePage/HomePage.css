@@ -23,12 +23,8 @@
   position: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20%;
   overflow-x: hidden;
-}
-
-.home-page .logo {
-  width: calc(15vw + 40px);
+  width: calc(7vw + 200px);
   margin-top: 10px;
   transform: translate(-50%, 0);
   top: 0;

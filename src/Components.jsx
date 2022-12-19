@@ -140,7 +140,7 @@ function ButtonOrLink(props) {
 
     let url = window.location.pathname;
     el =
-      <NavLink onClick={() => {
+      <NavLink style={props.style} onClick={() => {
         if (url !== "/login" && url !== "/signup") {
           sessionStorage.setItem("lastPageBeforeAuth", url);
         }
@@ -661,7 +661,7 @@ function CookiesWindow(props) {
 function DefaultMenu(props) {
   let options = [
     { content: "Уроци", link: "/lessons", typing: true, onHover: true, back: true, bold: true },
-    { content: "График", link: "/universities", bold: true },
+    { content: "График", link: "/timetable", bold: true },
     { content: "Ценоразпис", link: "/prices", bold: true },
     { content: "За нас", link: "/about" },
     { content: "Правила и условия", link: "/terms-and-conditions" },
@@ -689,22 +689,30 @@ function Footer() {
   }
 
   return (
-    <div className="footer" >
-      <Link className="home" link="/">
-        <img alt="logo" src="/Images/LogoLightCyan.png" className="light" />
-        <img alt="logo" src="/Images/LogoDark.png" className="dark" />
-      </Link>
+    <div className="footer">
+      <div className="adress-wrapper">
 
-      <div className="social">
-        <FLink className="fab fa-instagram" name="Инстаграм" />
-        <FLink className="fa fa-telegram" name="Телеграм" />
-        <FLink className="fab fa-facebook" name="Фейсбук" />
-      </div>
+        <div className="footer-wrapper">
+          <Link className="home" link="/">
+            <img  alt="logo" src="/Images/usmivka_logo_cut.png" className="light" />
+          </Link>
 
-      <div className="links">
-        <Link content="Уроци" link="/lessons" />
-        <Link content="Университети" link="/universities" />
-        <Link content="За julemy" link="/about" />
+          <div className="social">
+            <FLink className="fab fa-instagram" name="Инстаграм" />
+            <FLink className="fa fa-telegram" name="Телеграм" />
+            <FLink className="fab fa-facebook" name="Фейсбук" />
+          </div>
+
+          <div className="links">
+            <Link content="Уроци" link="/lessons" />
+            <Link content="Университети" link="/universities" />
+            <Link content="За julemy" link="/about" />
+          </div>
+        </div>
+
+        <p style={{ color: "white", opacity: 1 }}>
+          Уроците се провеждат в зала 1 ул Теменуга 1б ж.к Слатина(до пазарчето)
+        </p>
       </div>
 
     </div>
@@ -716,7 +724,7 @@ function LegalityBar() {
     <div className="legality-bar">
       <Link className="hoverable" link="/terms-and-conditions">Правила и условия</Link>
       <Link className="hoverable" link="/privacy-policy">Запазване на данни</Link>
-      <span><i className="far fa-copyright" /> Julemy.bg</span>
+      <span><i className="far fa-copyright" /> Usmivka.bg</span>
     </div>
   )
 }
@@ -727,8 +735,7 @@ function DefaultNavbar(props) {
       <DefaultMenu themeToggle />
       {props.search && <SearchField {...props.search} />}
       <Link className="home" link="/">
-        <img alt="logo light" src="/Images/LogoDark.png" className="dark" />
-        <img alt="logo light" src="/Images/LogoLightCyan.png" className="light" />
+        <img alt="logo light" src="/Images/usmivka_logo_cut.png" className="light" />
       </Link>
     </div>
   )
