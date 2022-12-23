@@ -12,6 +12,7 @@ import About from './pages/about';
 import Prices from './pages/prices';
 import Lessons from './pages/lessons';
 import Timetable from './pages/timetable';
+import ContactPage from './pages/contact';
 
 
 
@@ -24,8 +25,9 @@ function AppRoutes() {
         <Route path="/lessons" exact element={<Lessons />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/prices" exact element={<Prices />} />
-        <Route path="/terms-and-conditions" exact element={<Terms />} />
-        <Route path="/privacy-policy" exact element={<Privacy />} />
+        <Route path="/contact" exact element={<ContactPage />} />
+        {/* <Route path="/terms-and-conditions" exact element={<Terms />} /> */}
+        {/* <Route path="/privacy-policy" exact element={<Privacy />} /> */}
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </Router>

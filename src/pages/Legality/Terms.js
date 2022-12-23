@@ -8,7 +8,7 @@ export default function Terms() {
             <div className="header">ОБЩИ ПРАВИЛА И УСЛОВИЯ</div>
             <div className="last-update">Последно актуализирано: <strong>1.09.2021</strong></div>
 
-            <div className="margin">Моля, прочетете внимателно тези условия, преди да използвате услугите на сайта “julemy.bg”.</div>
+            <div className="margin">Моля, прочетете внимателно тези условия, преди да използвате услугите на сайта “Usmivka.app”.</div>
 
             <Title>ОПРЕДЕЛЕНИЯ</Title>
 

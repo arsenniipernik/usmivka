@@ -1,9 +1,11 @@
-import { DefaultPage } from "../../Components";
+import { DefaultPage, Subtitle } from "../../Components";
 
 import "./index.css"
 
 export default function Timetable() {
     return <DefaultPage className="page timetable-page" >
+
+        <Subtitle><strong>Датите за пробни изпити се обявяват при записване за изпит.</strong></Subtitle>
 
         <ul>
             <li>

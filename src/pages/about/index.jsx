@@ -8,6 +8,7 @@ export default function About() {
             <br />
             <strong style={{textAlign: "center", width: "100%", display: "inline-block", marginTop: "10px"}}>
                 ВРЕМЕ Е ЗА УЧЕНЕ, ВРЕМЕ Е ЗА УСМИВКА!
+                <br />
                 НА ДОБЪР ЧАС!
             </strong>
         </p>

@@ -2,8 +2,9 @@ import { DefaultPage, Subtitle, Title } from "../../Components";
 
 export default function Prices() {
     return <DefaultPage className="prices">
-        <Subtitle> Всички курсове се предлагат и в онлайн формат</Subtitle>
-        <Subtitle> Посочените цени са за едномесечно обучение ! </Subtitle>
+        <Subtitle> <strong>ВСИЧКИ КУРСОВЕ СЕ ПРЕДЛАГАТ И В ОНЛАЙН ФОРМАТ</strong></Subtitle>
+        <Subtitle> <strong>ПОСОЧЕНИТЕ ЦЕНИ СА ЗА ЕДНОМЕСЕЧНО ОБУЧЕНИЕ!</strong> </Subtitle>
+        <Subtitle> <strong>УРОЦИТЕ СЕ ПРОВЕЖДАТ В МАЛКИ ГРУПИ ДО 10 ЧОВЕКА</strong> </Subtitle>
 
         <ul style={{ lineHeight: "1.75em" }}>
             <li>
@@ -40,7 +41,7 @@ export default function Prices() {
             <li>
                 Математика
                 <ul>
-                    <li>2 пъти седмично - 100 лева</li>
+                    <li>2 пъти седмично по 2 учебни часа - 100 лева</li>
                     <li>1 път седмично - 50 лева</li>
                     <li>Единичен урок - 20 лева</li>
                 </ul>
@@ -55,9 +56,9 @@ export default function Prices() {
             <li>
                 Интензивна подготовка за нво
                 <ul>
-                    <li>Курс по математика 4 учебни часа седмично : 180 лева</li>
-                    <li>Курс по български език и литература 4 учебни часа седмично: 180 лева</li>
-                    <li>Обединено: 335 лева</li>
+                    <li>Курс по математика 6 учебни часа седмично : 205 лева</li>
+                    <li>Курс по български език и литература 6 учебни часа седмично: 205 лева</li>
+                    <li>Обединено: 380 лева</li>
                 </ul>
             </li>
             <li>

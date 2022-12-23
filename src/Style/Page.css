@@ -24,6 +24,8 @@
     display: flex;
     flex-flow: row wrap;
     flex-direction: column;
+
+    line-height: 1.75em;
 }
 
 .content-text {

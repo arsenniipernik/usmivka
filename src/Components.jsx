@@ -664,8 +664,9 @@ function DefaultMenu(props) {
     { content: "График", link: "/timetable", bold: true },
     { content: "Ценоразпис", link: "/prices", bold: true },
     { content: "За нас", link: "/about" },
-    { content: "Правила и условия", link: "/terms-and-conditions" },
-    { content: "Защита на данни", link: "/privacy-policy" }
+    { content: "Контакти", link: "/contact" },
+    // { content: "Правила и условия", link: "/terms-and-conditions" },
+    // { content: "Защита на данни", link: "/privacy-policy" }
   ]
 
   return (
@@ -711,7 +712,7 @@ function Footer() {
         </div>
 
         <p style={{ color: "white", opacity: 1 }}>
-          Уроците се провеждат в зала 1 ул Теменуга 1б ж.к Слатина(до пазарчето)
+          Уроците се провеждат в зала 1 ул Теменуга 1б ж.к Слатина (до пазарчето)
         </p>
       </div>
 
