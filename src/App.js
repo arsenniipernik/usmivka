@@ -13,6 +13,7 @@ import Prices from './pages/prices';
 import Lessons from './pages/lessons';
 import Timetable from './pages/timetable';
 import ContactPage from './pages/contact';
+import Zanimalnq from './pages/zanimalnq';
 
 
 
@@ -21,11 +22,12 @@ function AppRoutes() {
     <Router forceRefresh={false}>
       <Routes>
         <Route path="/" exact element={<HomePage />} />
-        <Route path="/timetable" exact element={<Timetable />} />
-        <Route path="/lessons" exact element={<Lessons />} />
-        <Route path="/about" exact element={<About />} />
-        <Route path="/prices" exact element={<Prices />} />
-        <Route path="/contact" exact element={<ContactPage />} />
+        <Route path="/график" exact element={<Timetable />} />
+        <Route path="/уроци" exact element={<Lessons />} />
+        <Route path="/за_нас" exact element={<About />} />
+        <Route path="/цени" exact element={<Prices />} />
+        <Route path="/контакти" exact element={<ContactPage />} />
+        <Route path="/занималня" exact element={<Zanimalnq />} />
         {/* <Route path="/terms-and-conditions" exact element={<Terms />} /> */}
         {/* <Route path="/privacy-policy" exact element={<Privacy />} /> */}
         <Route path="/*" element={<NotFound />} />

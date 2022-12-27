@@ -660,11 +660,12 @@ function CookiesWindow(props) {
 
 function DefaultMenu(props) {
   let options = [
-    { content: "Уроци", link: "/lessons", typing: true, onHover: true, back: true, bold: true },
-    { content: "График", link: "/timetable", bold: true },
-    { content: "Ценоразпис", link: "/prices", bold: true },
-    { content: "За нас", link: "/about" },
-    { content: "Контакти", link: "/contact" },
+    { content: "Уроци", link: "/уроци", typing: true, onHover: true, back: true, bold: true },
+    { content: "График", link: "/график", bold: true },
+    { content: "Ценоразпис", link: "/цени", bold: true },
+    { content: "За нас", link: "/за_нас", bold: true },
+    { content: "Контакти", link: "/контакти", bold: true },
+    { content: "Занималня", link: "/занималня", bold: true },
     // { content: "Правила и условия", link: "/terms-and-conditions" },
     // { content: "Защита на данни", link: "/privacy-policy" }
   ]
@@ -678,13 +679,13 @@ function DefaultMenu(props) {
 
 function Footer() {
 
-  function FLink(props) {
+  function FLink({className, name, link}) {
     return (
-      <a target="_blank" rel="external noopener noreferrer" href="https://instagram.com/">
+      <a className="link-with-icon" target="_blank" rel="external noopener noreferrer" href={link}>
         <div>
-          <i className={props.className} />
+          <i className={className} />
         </div>
-        <p>{props.name}</p>
+        <p>{name}</p>
       </a>
     )
   }
@@ -698,16 +699,19 @@ function Footer() {
             <img  alt="logo" src="/Images/usmivka_logo_cut.png" className="light" />
           </Link>
 
-          <div className="social">
+          {/* <div className="social">
             <FLink className="fab fa-instagram" name="Инстаграм" />
             <FLink className="fa fa-telegram" name="Телеграм" />
-            <FLink className="fab fa-facebook" name="Фейсбук" />
-          </div>
+            <FLink className="fab fa-facebook" name="Фейсбук" link="https://www.facebook.com/profile.php?id=100089185053577&mibextid=ZbWKwL" />
+          </div> */}
 
           <div className="links">
-            <Link content="Уроци" link="/lessons" />
-            <Link content="Университети" link="/universities" />
-            <Link content="За julemy" link="/about" />
+            <FLink className="fab fa-facebook" name="Фейсбук" link="https://www.facebook.com/profile.php?id=100089185053577&mibextid=ZbWKwL" />
+            <Link content="Уроци" link="/уроци" />
+            <Link content="За 'усмивка'" link="/за_нас" />
+            <Link content="Контакти" link="/контакти" />
+            <Link content="Ценоразпис" link="/цени" />
+            <Link content="Занималня" link="/занималня" />
           </div>
         </div>
 

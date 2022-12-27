@@ -175,15 +175,6 @@
     display: none;
 }
 
-.footer .links {
-    height: 100%;
-    width: 50%;
-    display: grid;
-    flex-grow: 1;
-    margin: 0 2vw;
-    font-size: calc(0.5vw + 10px);
-}
-
 .footer .social {
     margin: 0;
     width: auto;
@@ -216,7 +207,7 @@
 }
 
 .footer .social>:nth-child(1) {
-    color: var(--footer-1);
+    color: var(--footer-2);
 }
 
 .footer .social>:nth-child(2) {
@@ -238,34 +229,48 @@
         opacity: 1;
 }
 
-.footer .links
-{
+
+.footer .links {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 2vw 0 auto;
+    font-size: calc(0.5vw + 10px);
     padding: calc(0.1vw - 2px) 0;
+}
+
+.footer .link-with-icon
+{
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.footer .link-with-icon i{
+    font-size: 1.25em;
+}
+
+.footer .link-with-icon p{
+    margin: 0;
 }
 
 .footer .links>* {
     margin-right: 2vw;
     align-self: center;
     padding: 5px 10px;
-    color: var(--background);
-}
-
-.footer .links :nth-child(1) {
-    justify-self: flex-start;
-    background-color: var(--footer-3);
-}
-
-.footer .links :nth-child(2) {
-    justify-self: center;
-    background-color: var(--footer-2);
-}
-
-.footer .links :nth-child(3) {
-    justify-self: flex-end;
-    background-color: var(--footer-1);
+    color: var(--footer-2);
+    text-decoration: underline;
+    white-space: nowrap;
 }
 
 @media screen and (min-width: 600px) {
+    .footer .links
+    {
+        flex-direction: row;
+    }
+
     .footer .social {
         width: calc(100px + 20%);
         margin-right: calc(30% - 100px);
