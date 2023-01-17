@@ -4,7 +4,7 @@ export default function Lessons() {
     return <DefaultPage>
 
         <Subtitle>Ние предлагаме:</Subtitle>
-        <strong style={{textAlign: "center", textDecoration: "underline"}}>Всички курсове се предлагат с възможност за онлайн обучение</strong> 
+        <strong style={{textAlign: "center", textDecoration: "underline"}}>Всички курсове се предлагат с възможност за онлайн обучение.</strong> 
 
         <ul>
             <li>Интензивни курсове по подготовка за НВО по Български и Математика за 4ти и 7ми клас.</li> 
