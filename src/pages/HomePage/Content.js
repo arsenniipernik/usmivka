@@ -9,7 +9,7 @@ function Content() {
             <Link hoverable bold link = "/уроци" content = "Уроци" primary/>
             <Link hoverable bold link = "/занималня" content = "Занималня" secondary/>
         </div>
-        <p style={{ color: "white", opacity: 0.8, textAlign: "center" }}>
+        <p style={{ color: "white", opacity: 0.8, textAlign: "center", fontSize:"1.25em" }}>
           Уроците се провеждат в зала 1 ул Теменуга 1б ж.к Слатина(до пазарчето)
         </p>
     </>
